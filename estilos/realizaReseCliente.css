@@ -1,0 +1,2402 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.btnPago{
+    width: 10rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.body {
+    max-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    background-color: #d9dbe0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-bottom: 26rem;
+    padding-top: 16rem;
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 1rem;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 1rem;
+      background-color: #004f7866;
+    }
+}
+
+.headerCli{
+    width: 100%;
+    height: 16rem;
+    background: linear-gradient(0deg, rgba(217,219,224,1) 0%, rgb(100, 113, 209) 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    & .headerDiv1{
+      width: 100%;
+      height: 70%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      background: linear-gradient(0deg, #0c79b4 0%, #086496 100%);;
+      & .divLogo{
+        width: max-content;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 3rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        & svg{
+          width: 24rem;
+          height: max-content;
+          fill: #ffffff;
+        }
+      }
+      & .divPerfilGene{
+        width: max-content;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        padding-right: 3rem;
+        display: flex;
+        align-items: center;
+        & .divPerfil{
+          width: 10rem;
+          height: 10rem;
+          background-color: #ffffff88;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          position: relative;
+          align-items: center;
+          border-radius: 100%;
+          cursor: pointer;
+          transition: .3s;
+          &:hover{
+            background-color: #e4f2ffaa;
+            & .divImg{
+              background-color: #e4f2ffaa;
+              & img{
+                width: 106%;
+                height: 106%;
+                position: absolute;
+              }
+            }
+          }
+          & .divImg{
+            width: 9rem;
+            height: 9rem;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            border-radius: 100%;
+            overflow: hidden;
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+            padding: .2rem;
+            border: 2px solid #003e5f66;
+            transition: .3s;
+            & img{
+              transition: .3s;
+              border-radius: 50%;
+              border: 4px solid #003e5f66;
+            }
+          }
+        }
+      }
+      & .cuadroOPerfil1 {
+        height: 0rem;
+        width: 0rem;
+        box-shadow: none;
+        overflow: hidden;
+        position: absolute;
+        transform-origin: top left;
+        transition: 0.3s;
+        z-index: 1000;
+      }
+      & .cuadroOPerfil2 {
+        display: flex;
+        position: absolute;
+        z-index: 1000;
+        width: 50rem;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        top: 100%;
+        right: 2rem;
+        transition: 0.3s;
+        overflow: hidden;
+        background-color: #e9e8e8;
+        transform-origin: top right;
+        box-shadow: 0.2rem 0.4rem 0.4rem #33333355;
+        & .div1 {
+          width: 100%;
+          height: max-content;
+          display: flex;
+          flex-direction: column;
+          border-bottom: 1px solid #002d5622;
+          & div {
+            width: 100%;
+            height: max-content;
+            display: flex;
+            align-items: center;
+            padding-top: 1.4rem;
+            padding-left: 2rem;
+            padding-bottom: 1.4rem;
+            & svg {
+              width: 2rem;
+              height: max-content;
+              fill: #002d5699;
+            }
+            & span {
+              font-size: 1.6rem;
+              margin-left: 1rem;
+              color: #002d56aa;
+            }
+          }
+          & button {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            padding: 1.8rem;
+            font-size: 1.6rem;
+            color: #002d56aa;
+            cursor: pointer;
+            transition: 0.2s;
+            & svg {
+              width: 2rem;
+              height: max-content;
+              fill: #002d56aa;
+              margin-right: 1rem;
+              transition: 0.2s;
+            }
+            &:hover {
+              background-color: #002d5633;
+              color: #ffffff;
+              & svg {
+                fill: #ffffff;
+              }
+            }
+          }
+        }
+        & .div2 {
+          width: 100%;
+          display: flex;
+          height: max-content;
+          & a {
+            width: 100%;
+          }
+          & button {
+            font-size: 1.6rem;
+            width: 100%;
+            padding: 1.8rem;
+            display: flex;
+            justify-content: flex-start;
+            color: #002d56aa;
+            transition: 0.2s;
+            cursor: pointer;
+            & svg {
+              width: 2rem;
+              height: max-content;
+              fill: #002d56aa;
+              margin-right: 1rem;
+              transition: 0.2s;
+            }
+            &:hover {
+              background-color: #002d5633;
+              color: #ffffff;
+              & svg {
+                fill: #ffffff;
+              }
+            }
+          }
+        }
+        & .div3 {
+          width: 100%;
+          display: flex;
+          height: max-content;
+          & button {
+            font-size: 1.6rem;
+            width: 100%;
+            padding: 1.8rem;
+            display: flex;
+            justify-content: flex-start;
+            color: #002d56aa;
+            transition: 0.2s;
+            cursor: pointer;
+            & svg {
+              width: 2rem;
+              height: max-content;
+              fill: #002d56aa;
+              margin-right: 1rem;
+              transition: 0.2s;
+            }
+            &:hover {
+              background-color: #002d5633;
+              color: #ffffff;
+              & svg {
+                fill: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .headerNav{
+      background-color: #c4cee4;
+      height: 30%;
+      width: 100%;
+      display: flex;
+      border-bottom: .5rem solid #7A97CC;
+      & ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding-left: 3rem;
+        justify-content: flex-start;
+        & li{
+          width: max-content;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 1.4rem;
+          &:first-child{
+            margin-left: 0;
+          }
+          & a{
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #183a6d;
+            cursor: pointer;
+            transition: .3s;
+            padding: .8rem 1rem;
+            border-radius: 1rem;
+            &:hover{
+              background-color: #004f7844;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+.main{
+    max-width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .separador{
+        width: 100%;
+        border-top: 3px dashed #2a4a7a44;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    & .separador2{
+        width: 100%;
+        border-top: 2px dashed #2a4a7a44;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    & .realiceReseDiv{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: #9FC3D8;
+        & div{
+            width: 100%;
+            height: 4rem;
+            background-color: #D9E7EF;
+        }
+        & svg{
+            width: 5.8rem;
+            height: max-content;
+            margin: 2rem 0;
+            fill: #2a4a7a;
+        }
+        & span{
+            font-size: 3rem;
+            font-weight: 600;
+            margin: 2rem 0;
+            margin-left: 1rem;
+            color: #2a4a7a;
+        }
+    }
+    & .divGeneReserva{
+        width: 90%;
+        height: max-content;
+        margin-top: 4rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10rem;
+        align-items: center;
+        box-shadow: .6rem .6rem .4rem #183a6d44;
+        & .div1-C{
+            width: 0;
+            height: 0;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            position: relative;
+        }
+        & .div1-A{
+            width: 100%;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            background-color: #84B5CF;
+            & .spanQueReserva{
+                width: 100%;
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                height: max-content;
+                font-size: 2rem;
+                padding-left: 2rem;
+                color: #2a4a7a;
+                font-weight: 600;
+            }
+            & .divInputGene{
+                width: 100%;
+                height: max-content;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2rem;
+                & .divInput{
+                    width: max-content;
+                    height: 5rem;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 2rem;
+                    color: #2a4a7a;
+                    position: relative;
+                    & .inputReser-A{
+                        min-width: 80rem;
+                        min-height: 100%;
+                        border-radius: 1rem;
+                        font-size: 1.8rem;
+                        padding-left: 1.4rem;
+                        background-color: #F6F6F7;
+                        color: #2a4a7add;
+                        &::placeholder{
+                            color: #2a4a7a99;
+                        }
+                    }
+                    & .prodRLista-C{
+                        width: 0;
+                        height: 0;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        position: absolute;
+                        top: 100%;
+                        display: flex;
+                        left: 0;
+                    }
+                    & .prodRLista-A{
+                        width: 100%;
+                        height: max-content;
+                        max-height: 27rem;
+                        box-shadow: .4rem .4rem .4rem #183a6d44;
+                        display: grid;
+                        grid-auto-flow: row;
+                        grid-auto-rows: max-content;
+                        overflow-x: hidden;
+                        overflow-y: auto;
+                        position: absolute;
+                        z-index: 1200;
+                        top: 100%;
+                        left: 0;
+                        background-color: #e8e9ec;
+                        &::-webkit-scrollbar {
+                            -webkit-appearance: none;
+                            width: .6rem;
+                        }
+                        &::-webkit-scrollbar-thumb {
+                            border-radius: 1rem;
+                            background-color: #004f7866;
+                        }
+                        & .pdtNOencontrado{
+                            width: 100%;
+                            padding: 2rem 1.4rem;
+                            font-size: 1.8rem;
+                            color: #2a4a7a;
+                        }
+                        & .divProducto{
+                            width: 100%;
+                            min-height: 9rem;
+                            max-height: 9rem;
+                            display: flex;
+                            cursor: pointer;
+                            transition: .3s;
+                            border-bottom: 1px solid #2a4a7a44;
+                            &:hover{
+                                background-color: #b7c2dd;
+                            }
+                            & .imgDiv{
+                                width: 14rem;
+                                height: 100%;
+                                display: flex;
+                                padding: .6rem;
+                                & img{
+                                    border-radius: 1rem;
+                                }
+                            }
+                            & .divDato{
+                                width: 76%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                & span{
+                                    margin-left: 1rem;
+                                    font-size: 2rem;
+                                    width: 100%;
+                                    color: #2a4a7a;
+                                    overflow: hidden;
+                                    text-wrap: nowrap;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .div2-C{
+            width: 0;
+            overflow: hidden;
+            height: 0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            position: relative;
+        }
+        & .div2-A{
+            width: 100%;
+            height: max-content;
+            display: flex;
+            border-bottom: 1px solid #183a6d44;
+            position: relative;
+            padding: 2rem;
+            background-color: #e8ebf0;
+            & .prodContGene-A{
+                width: 100%;
+                height: max-content;
+                display: flex;
+                border-radius: 1rem;
+                background-color: #F6F6F7;
+                padding: .6rem;
+                & .pdtElegido{
+                    width: 100%;
+                    height: 40rem;
+                    border-radius: 1rem;
+                    background-color: #b6cbe6;
+                    display: flex;
+                    overflow: hidden;
+                    position: relative;
+                    & .imgDiv{
+                        min-width: 34rem;
+                        max-width: 34rem;
+                        min-height: 40rem;
+                        padding: 1rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #c6cfe4;
+                        & img{
+                            border-radius: 1rem;
+                        }
+                    }
+                    & .divDatos{
+                        flex-grow: 1;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        & .nombrePdt{
+                            width: 100%;
+                            font-size: 2.2rem;
+                            font-weight: 600;
+                            margin-bottom: .6rem;
+                            padding-left: 2rem;
+                            color: #2a4a7a;
+                        }
+                        & .categoTipoDiv{
+                            width: 100%;
+                            background-color: #6b8bb8;
+                            padding: .4rem 0;
+                            padding-left: 2rem;
+                            & span{
+                                font-size: 2rem;
+                                color: #ffffff;
+                                &:nth-child(2){
+                                    margin-left: 1rem;
+                                }
+                                &:nth-child(3){
+                                    margin-left: 1rem;
+                                }
+                            }
+                        }
+                        & .divDescriCaracte{
+                            width: 100%;
+                            height: max-content;
+                            display: flex;
+                            flex-direction: column;
+                            & .divDescripGene{
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                height: max-content;
+                                & span{
+                                    width: 100%;
+                                    font-size: 1.8rem;
+                                    font-weight: 600;
+                                    margin-top: 1rem;
+                                    padding-left: 2rem;
+                                    color: #2a4a7a;
+                                    margin-bottom: .6rem;
+                                }
+                                & .descripcion{
+                                    width: 96%;
+                                    height: 12rem;
+                                    border-radius: 1rem;
+                                    font-size: 1.7rem;
+                                    padding: 1rem;
+                                    border: 1px solid #2a4a7a44;
+                                    margin-left: 2rem;
+                                    color: #2a4a7a;
+                                    overflow-y: scroll;
+                                    &::-webkit-scrollbar {
+                                        -webkit-appearance: none;
+                                        width: .6rem;
+                                    }
+                                    &::-webkit-scrollbar-thumb {
+                                        border-radius: 1rem;
+                                        background-color: #004f7866;
+                                    }
+                                }
+                            }
+                            & .divCaracGene{
+                                width: 100%;
+                                height: max-content;
+                                & .caractSpan{
+                                    width: 100%;
+                                    font-size: 1.8rem;
+                                    font-weight: 600;
+                                    padding-left: 2rem;
+                                    color: #2a4a7a;
+                                    margin-bottom: .6rem;
+                                }
+                                & .divGeneCaract{
+                                    max-width: 110rem;
+                                    margin-left: 2rem;
+                                    height: 6rem;
+                                    border: 1px solid #2a4a7a44;
+                                    display: flex;
+                                    align-items: center;
+                                    padding-left: 1rem;
+                                    margin-top: .6rem;
+                                    border-radius: 1rem;
+                                    display: grid;
+                                    grid-auto-flow: column;
+                                    grid-auto-columns: max-content;
+                                    overflow-x: auto;
+                                    overflow-y: hidden;
+                                    gap: 1rem;
+                                    &::-webkit-scrollbar {
+                                        -webkit-appearance: none;
+                                        height: .4rem;
+                                    }
+                                    &::-webkit-scrollbar-thumb {
+                                        border-radius: 1rem;
+                                        background-color: #004f7866;
+                                    }
+                                    & div{
+                                        width: max-content;
+                                        border-radius: 1rem;
+                                        height: max-content;
+                                        border-radius: 1rem;
+                                        background-color: #6b8bb8;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: 1.8rem;
+                                        padding: 1rem 2rem;
+                                        color: #ffffff;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .divSvg{
+                        width: 4rem;
+                        height: 4rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: 1rem;
+                        right: 1rem;
+                        cursor: pointer;
+                        & svg{
+                            width: 3rem;
+                            height: max-content;
+                            fill: #2a4a7a;
+                        }
+                    }
+                }
+            }
+        }
+        & .div3-A{
+            width: 100%;
+            height: max-content;
+            display: flex;
+            margin-top: 2rem;
+            border-top: 1px solid #004f7844;
+            position: relative;
+            & .divDaReGene-A{
+                width: 32%;
+                height: 76rem;
+                display: flex;
+                flex-direction: column;
+                overflow-y: scroll;
+                background-color: #e8ebf0;
+                position: relative;
+                &::-webkit-scrollbar {
+                    -webkit-appearance: none;
+                    width: .6rem;
+                }
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 1rem;
+                    background-color: #004f7866;
+                }
+                & .cubierta-C{
+                    z-index: -100;
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                & .cubierta-A{
+                    width: 100%;
+                    height: 100%;
+                    background-color: #e8ebf088;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                }
+                & .datosReseSpan{
+                    width: 100%;
+                    padding-left: 1.4rem;
+                    font-size: 2rem;
+                    color: #2a4a7a;
+                    margin-top: 2rem;
+                    font-weight: 600;
+                }
+                & .divTipoReserva{
+                    width: 100%;
+                    margin-top: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #7cb3d1;
+                    padding: 1rem 0;
+                    & .tipoReseSpan{
+                        width: 100%;
+                        text-align: center;
+                        color: #2a4a7acc;
+                        font-weight: 600;
+                        font-size: 1.8rem;
+                    }
+                    & .btnDiv-A{
+                        width: 100%;
+                        height: max-content;
+                        padding: .8rem 0;
+                        display: flex;
+                        justify-content: center;
+                        gap: 1rem;
+                        & .btnTR{
+                            min-width: max-content;
+                            height: 4rem;
+                            padding: .6rem 2rem;
+                            font-size: 1.8rem;
+                            color: #e8f2f7;
+                            border-radius: 2rem;
+                            background-color: #2392ce11;
+                            border: 1px solid #e8f2f7;
+                            cursor: pointer;
+                            transition: .3s;
+                            &:hover{
+                                background-color: #ffffff44;
+                            }
+                        }
+                        & .btnBloq{
+                            min-width: max-content;
+                            height: 4rem;
+                            padding: .6rem 2rem;
+                            font-size: 1.8rem;
+                            color: #37537799;
+                            border-radius: 2rem;
+                            background-color: #2f6c8d11;
+                            border: 1px solid #37537799;
+                            cursor: default;
+                            &:hover{
+                                background-color: #2f6c8d11;
+                            }
+                        }
+                        & .btnSelec{
+                            min-width: max-content;
+                            height: 4rem;
+                            padding: .6rem 2rem;
+                            font-size: 1.8rem;
+                            color: #f2f8ff;
+                            font-weight: 600;
+                            border-radius: 2rem;
+                            background-color: #144cb666;
+                            border: 1px solid #f2f8ff;
+                            cursor: default;
+                            &:hover{
+                                background-color: #144cb666;
+                            }
+                        }
+                    }
+                }
+                & .divDurGene-A{
+                    width: 100%;
+                    height: max-content;
+                    display: flex;
+                    flex-direction: column;
+                    & .divDuracion1{
+                        width: 100%;
+                        margin-bottom: 1rem;
+                        border-top: 1px solid #2a4a7a44;
+                        border-bottom: 1px solid #2a4a7a44;
+                        display: flex;
+                        padding: 1rem 0;
+                        flex-direction: column;
+                        & .elige{
+                            width: 100%;
+                            font-size: 1.8rem;
+                            color: #2a4a7a;
+                            padding-left: 1.4rem;
+                            margin-bottom: .6rem;
+                        }
+                        & .horario{
+                            width: 100%;
+                            font-size: 1.8rem;
+                            background-color: #7C9CCC;
+                            padding: .4rem 0;
+                            padding-left: 1.4rem;
+                            color: #ffffff;
+                        }
+                    }
+                    & .divDuracion2{
+                        width: 100%;
+                        height: max-content;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        & .divBtnSemanaMover{
+                            width: 100%;
+                            margin: 0;
+                            padding: 0;
+                            height: max-content;
+                            margin-top: 1rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            column-gap: 1rem;
+                            & .botonBloq{
+                                width: max-content;
+                                height: max-content;
+                                font-size: 2rem;
+                                color: #43454744;
+                                background-color: #49596133;
+                                border-radius: 1px solid #43464b44;
+                                font-weight: 600;
+                                padding: 1rem 2rem;
+                                border-radius: 1rem;
+                            }
+                            & .botonDispo{
+                                width: max-content;
+                                height: max-content;
+                                font-size: 2rem;
+                                color: #2a4a7a;
+                                background-color: #004f7844;
+                                border-radius: 1px solid #2a4a7a44;
+                                font-weight: 600;
+                                padding: 1rem 2rem;
+                                border-radius: 1rem;
+                                cursor: pointer;
+                                transition: .3s;
+                                &:hover{
+                                    background-color: #1c75a544;
+                                }
+                            }
+                        }
+                        & .divError{
+                            width: 100%;
+                            height: max-content;
+                            display: flex;
+                            flex-wrap: wrap;
+                            padding-left: 1.4rem;
+                            align-items: center;
+                            & .spanErr{
+                                width: 80%;
+                                font-size: 1.6rem;
+                                font-weight: 400;
+                                color: #ff2222;
+                                margin: 2rem 0 0 0;
+                            }
+                            & .spanHorarioDias{
+                                width: 80%;
+                                font-size: 1.6rem;
+                                font-weight: 400;
+                                color: #22aa22;
+                                margin: .6rem 0 0 0;
+                            }
+                        }
+                        & .semana{
+                            width: 100%;
+                            text-align: center;
+                            color: #2a4a7a;
+                            font-size: 1.8rem;
+                        }
+                        & .semanaF{
+                            width: 100%;
+                            margin-top: 1rem;
+                            text-align: center;
+                            color: #2a4a7a;
+                            font-size: 1.8rem;
+                            & b{
+                                font-size: 1.8rem;
+                                color: #2a4a7a;
+                            }
+                        }
+                        & .divDesde{
+                            width: 100%;
+                            display: flex;
+                            height: max-content;
+                            align-items: center;
+                            & span{
+                                width: 24%;
+                                font-size: 1.8rem;
+                                margin-left: 1.4rem;
+                                color: #2a4a7a;
+                            }
+                            & input{
+                                min-width: 20rem;
+                                height: 4rem;
+                                border-radius: 1rem;
+                                padding: 0 2rem;
+                                font-size: 1.8rem;
+                                color: #2a4a7add;
+                            }
+                        }
+                        & .divDia{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            height: max-content;
+                            align-items: center;
+                            & .divDia2{
+                                width: 100%;
+                                display: flex;
+                                padding: 0;
+                                align-items: center;
+                                margin: 0;
+                                & span{
+                                    width: 24%;
+                                    font-size: 1.8rem;
+                                    padding-left: 1.4rem;
+                                    color: #2a4a7a;
+                                }
+                                & input{
+                                    min-width: 20rem;
+                                    height: 4rem;
+                                    border-radius: 1rem;
+                                    padding: 0 2rem;
+                                    font-size: 1.8rem;
+                                    color: #2a4a7add;
+                                }
+                            }
+                            & .divHora{
+                                width: 100%;
+                                display: flex;
+                                padding: 0;
+                                align-items: center;
+                                margin: 0;
+                                margin-top: 1rem;
+                                & span{
+                                    width: 24%;
+                                    font-size: 1.8rem;
+                                    padding-left: 1.4rem;
+                                    color: #2a4a7a;
+                                }
+                                & .inputHora{
+                                    min-width: 10rem;
+                                    height: 4rem;
+                                    border-radius: 1rem;
+                                    padding: 0 2rem;
+                                    font-size: 1.8rem;
+                                    color: #2a4a7add;
+                                }
+                            } 
+                        }
+                        & .divCantidad{
+                            width: 100%;
+                            display: flex;
+                            padding: 0;
+                            margin: 0;
+                            height: max-content;
+                            align-items: center;
+                            margin-top: 1rem;
+                            & .spanCant{
+                                width: 24%;
+                                font-size: 1.8rem;
+                                margin-left: 1.4rem;
+                                padding: 0;
+                                color: #2a4a7a;
+                            }
+                            & .inputCantidad{
+                                width: 10rem;
+                                height: 4rem;
+                                border-radius: 1rem;
+                                color: #2a4a7a;
+                                font-size: 1.8rem;
+                                padding-left: 1.4rem;
+                                padding-right: 1rem;
+                            }
+                            & .diasSpan{
+                                font-size: 1.8rem;
+                                padding-left: 1.4rem;
+                                color: #2a4a7a;
+                                font-weight: 600;
+                                margin-left: 1rem;
+                            }
+                            & span{
+                                width: 24%;
+                                font-size: 1.8rem;
+                                padding-left: 1.4rem;
+                                color: #2a4a7a;
+                            }
+                            & .divHora{
+                                width: max-content;
+                                height: max-content;
+                                display: flex;
+                                align-items: center;
+                                & input{
+                                    width: 10rem;
+                                    height: 4rem;
+                                    border-radius: 1rem;
+                                    padding: 0 2rem;
+                                    margin: 0;
+                                    font-size: 1.8rem;
+                                    color: #2a4a7add;
+                                }
+                                & .diasSpan{
+                                    width: 24%;
+                                    font-size: 1.8rem;
+                                    color: #2a4a7acc;
+                                    font-weight: 600;
+                                }
+                            }
+                            & .divMinu{
+                                width: max-content;
+                                height: max-content;
+                                display: flex;
+                                margin-left: 1rem;
+                                align-items: center;
+                                & input{
+                                    width: 10rem;
+                                    height: 4rem;
+                                    border-radius: 1rem;
+                                    padding: 0 2rem;
+                                    margin: 0;
+                                    font-size: 1.8rem;
+                                    color: #2a4a7add;
+                                }
+                                & .diasSpan{
+                                    width: 24%;
+                                    font-size: 1.8rem;
+                                    color: #2a4a7acc;
+                                    font-weight: 600;
+                                }
+                            } 
+                        }
+                    }
+                    & .divUnidGene-A{
+                        width: 100%;
+                        height: max-content;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 2rem 0;
+                        margin: 2rem 0 0 0;
+                        border-top: 1px solid #2a4a7a44;
+                        border-bottom: 1px solid #2a4a7a44;
+                        & .divUnidad2{
+                            width: 100%;
+                            height: max-content;
+                            display: flex;
+                            flex-direction: column;
+                            & .unidadSpan{
+                                width: 100%;
+                                padding-left: 1.4rem;
+                                font-size: 1.8rem;
+                                color: #2a4a7a;
+                            }
+                            & .div1{
+                                width: 46rem;
+                                height: max-content;
+                                display: flex;
+                                flex-direction: column;
+                                position: relative;
+                                margin-left: 1.4rem;
+                                & .inputUnid-C{
+                                    width: 0;
+                                    height: 0;
+                                    overflow: hidden;
+                                    position: relative;
+                                    display: flex;
+                                    padding: 0;
+                                    margin: 0;
+                                }
+                                & .inputUnid-A{
+                                    width: 100%;
+                                    margin-top: .6rem;
+                                    height: max-content;
+                                    height: 4.4rem;
+                                    border-radius: 1rem;
+                                    padding-left: 1.4rem;
+                                    font-size: 1.8rem;
+                                    color: #2a4a7a00;
+                                    cursor: pointer;
+                                    &::placeholder{
+                                        color: #2a4a7a99;
+                                    }
+                                }
+                                & .divUnidElegi-C{
+                                    width: 0;
+                                    height: 0;
+                                    display: flex;
+                                    position: relative;
+                                    overflow: hidden;
+                                    padding: 0;
+                                    margin: 0;
+                                }
+                                & .divUnidElegi-A{
+                                    width: 100%;
+                                    height: 10rem;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    padding: .4rem;
+                                    margin-top: .6rem;
+                                    background-color: #F6F6F7;
+                                    border-radius: 1rem;
+                                    & .divUnidad{
+                                        width: 100%;
+                                        height: 100%;
+                                        display: flex;
+                                        align-items: center;
+                                        background-color: #c1d4df;
+                                        border-radius: 1rem;
+                                        overflow: hidden;
+                                        position: relative;
+                                        & .divImg{
+                                            width: 12rem;
+                                            height: 9rem;
+                                            padding: .4rem;
+                                            & img{
+                                                border-radius: 1rem;
+                                            }
+                                        }
+                                        & .divData{
+                                            width: 70%;
+                                            overflow: hidden;
+                                            height: 100%;
+                                            display: flex;
+                                            align-items: center;
+                                            & span{
+                                                margin-left: 1rem;
+                                                font-size: 1.8rem;
+                                                color: #2a4a7a;
+                                                font-weight: 600;
+                                                text-wrap: nowrap;
+                                                overflow: hidden;
+                                            }
+                                        }
+                                        & .divSvg{
+                                            width: 5rem;
+                                            height: 100%;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            position: absolute;
+                                            top: 0;
+                                            right: 0;
+                                            background-color: #B4C9D5;
+                                            & svg{
+                                                fill: #2a4a7a;
+                                                width: 2rem;
+                                                height: max-content;
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+                                }
+                                & .lisUnid-C{
+                                    width: 0;
+                                    height: 0;
+                                    display: flex;
+                                    overflow: hidden;
+                                    margin: 0;
+                                    padding: 0;
+                                    position: absolute;
+                                    left: 0;
+                                    top: 100%;
+                                    box-shadow: none;
+                                }
+                                & .lisUnid-A{
+                                    width: 100%;
+                                    height: max-content;
+                                    max-height: 27rem;
+                                    background-color: #E8E9EC;
+                                    box-shadow: .4rem .4rem .4rem #183a6d44;
+                                    display: grid;
+                                    grid-auto-flow: row;
+                                    grid-auto-rows: max-content;
+                                    overflow-x: hidden;
+                                    overflow-y: auto;
+                                    position: absolute;
+                                    z-index: 800;
+                                    top: 100%;
+                                    left: 0;
+                                    &::-webkit-scrollbar {
+                                        -webkit-appearance: none;
+                                        width: .6rem;
+                                    }
+                                    &::-webkit-scrollbar-thumb {
+                                        border-radius: 1rem;
+                                        background-color: #004f7866;
+                                    }
+                                    & .unidadNOdisponibles{
+                                        width: 100%;
+                                        text-align: center;
+                                        padding: 2rem 1.4rem;
+                                        font-size: 1.8rem;
+                                        color: #2a4a7a;
+                                    }
+                                    & .unidad{
+                                        width: 100%;
+                                        height: 9rem;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: flex-start;
+                                        background-color: #E8E9EC;
+                                        transition: .3s;
+                                        border-bottom: 1px solid #2a4a7a44;
+                                        cursor: pointer;
+                                        &:hover{
+                                            background-color: #b7c2dd;
+                                        }
+                                        & .div1{
+                                            width: 12rem;
+                                            height: 9rem;
+                                            padding: 0;
+                                            padding: .4rem;
+                                            margin: 0;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            & img{
+                                                border-radius: 1rem;
+                                            }
+                                        }
+                                        & .div2{
+                                            width: 60%;
+                                            display: flex;
+                                            height: 100%;
+                                            align-items: center;
+                                            margin-left: 1rem;
+                                            & span{
+                                                width: 80%;
+                                                overflow: hidden;
+                                                text-wrap: nowrap;
+                                                font-size: 1.8rem;
+                                                font-weight: 600;
+                                                color: #2a4a7a;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .divMiemGene-A{
+                    width: 100%;
+                    height: max-content;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 1rem;
+                    & .divMiemIn-A{
+                        width: 100%;
+                        height: max-content;
+                        display: flex;
+                        flex-direction: column;
+                        border-top: 1px solid #2a4a7a44;
+                        border-bottom: 1px solid #2a4a7a44;
+                        & .miembroSpan{
+                            width: 100%;
+                            padding-left: 1.4rem;
+                            font-size: 1.8rem;
+                            margin-top: 1.4rem;
+                            color: #2a4a7a;
+                        }
+                        & .divMiembroInput2{
+                            width: max-content;
+                            height: max-content;
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 1.4rem;
+                            position: relative;
+                            margin-bottom: 1.4rem;
+                            & .inputMiembro-C{
+                                width: 0;
+                                height: 0;
+                                overflow: hidden;
+                                position: relative;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            & .inputMiembro-A{
+                                width: 46rem;
+                                height: 4.4rem;
+                                border-radius: 1rem;
+                                font-size: 1.8rem;
+                                padding-left: 1.4rem;
+                                color: #2a4a7add;
+                                background-color: #FFFFFF;
+                                margin-top: .6rem;
+                                &::placeholder{
+                                    color: #2a4a7a99;
+                                }
+                            }
+                            & .inputMiembro-A-Bloq{
+                                width: 46rem;
+                                height: 4.4rem;
+                                border-radius: 1rem;
+                                font-size: 1.8rem;
+                                padding-left: 1.4rem;
+                                color: #2a4a7add;
+                                background-color: #EAECF0;
+                                margin-top: .6rem;
+                                &::placeholder{
+                                    color: #2a4a7a99;
+                                }
+                            }
+                            & .miemSeleDiv-C{
+                                width: 0;
+                                height: 0;
+                                display: flex;
+                                overflow: hidden;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            & .miemSeleDiv-A{
+                                width: 46rem;
+                                height: 10rem;
+                                margin-top: .6rem;
+                                overflow: hidden;
+                                border-radius: 1rem;
+                                background-color: #F6F6F7;
+                                padding: .4rem;
+                                & .divMElegido{
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 1rem;
+                                    background-color: #c1d4df;
+                                    overflow: hidden;
+                                    display: flex;
+                                    position: relative;
+                                    align-items: center;
+                                    & .imgDiv{
+                                        width: 9.6rem;
+                                        height: 9.6rem;
+                                        padding: .6rem;
+                                        & img{
+                                            border-radius: 1rem;
+                                        }
+                                    }
+                                    & .divSpan{
+                                        width: 73%;
+                                        height: max-content;
+                                        display: flex;
+                                        flex-direction: column;
+                                        margin-left: 1rem;
+                                        & span{
+                                            font-size: 1.8rem;
+                                            color: #2a4a7a;
+                                            width: 100%;
+                                            text-wrap: nowrap;
+                                            overflow: hidden;
+                                            &:nth-child(1){
+                                                font-weight: 600;
+                                                margin-bottom: .4rem;
+                                            }
+                                        }
+                                    }
+                                    & .divSvg{
+                                        width: 10%;
+                                        min-height: 100%;
+                                        position: absolute;
+                                        top: 0;
+                                        background-color: #B4C9D5;
+                                        right: 0;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        & svg{
+                                            cursor: pointer;
+                                            width: 2rem;
+                                            height: max-content;
+                                            fill: #2a4a7a;
+                                        }
+                                    }
+                                }
+                            }
+                            & .miembroLis-C{
+                                width: 0;
+                                overflow: hidden;
+                                height: 0;
+                                margin: 0;
+                                padding: 0;
+                                box-shadow: none;
+                                display: flex;
+                                position: absolute;
+                                top: 100%;
+                                left: 0;
+                            }
+                            & .miembroLis-A{
+                                width: 100%;
+                                max-height: 27rem;
+                                height: max-content;
+                                box-shadow: .4rem .4rem .4rem #183a6d44;
+                                display: grid;
+                                top: 100%;
+                                left: 0;
+                                grid-auto-flow: row;
+                                grid-auto-rows: max-content;
+                                background-color: #E8E9EC;
+                                overflow-x: hidden;
+                                overflow-y: auto;
+                                position: absolute;
+                                &::-webkit-scrollbar {
+                                    -webkit-appearance: none;
+                                    width: .6rem;
+                                }
+                                &::-webkit-scrollbar-thumb {
+                                    border-radius: 1rem;
+                                    background-color: #004f7866;
+                                }
+                                & .miemNOencontrado{
+                                    width: 100%;
+                                    padding: 2rem 1.4rem;
+                                    font-size: 1.8rem;
+                                    color: #2a4a7a;
+                                }
+                                & .divMiembro{
+                                    width: 100%;
+                                    height: 9rem;
+                                    display: flex;
+                                    border-bottom: 1px solid #2a4a7a44;
+                                    transition: .3s;
+                                    background-color: #E8E9EC;
+                                    cursor: pointer;
+                                    &:hover{
+                                        background-color: #b7c2dd;
+                                    }
+                                    & .div1{
+                                        width: 8rem;
+                                        height: 100%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        padding: .4rem;
+                                        & img{
+                                            border-radius: 1rem;
+                                        }
+                                    }
+                                    & .div2{
+                                        width: 70%;
+                                        height: 100%;
+                                        margin-left: 1rem;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        & span{
+                                            width: 80%;
+                                            height: max-content;
+                                            color: #2a4a7a;
+                                            font-size: 1.8rem;
+                                            text-wrap: nowrap;
+                                            overflow: hidden;
+                                            &:nth-child(1){
+                                                font-weight: 600;
+                                                margin-bottom: .6rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .divNumPerso-A{
+                        width: 100%;
+                        height: max-content;
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 2rem;
+                        border-top: 1px solid #2a4a7a44;
+                        padding-top: 1rem;
+                        border-bottom: 1px solid #2a4a7a44;
+                        padding-bottom: 1rem;
+                        & .numPerso{
+                            width: 100%;
+                            color: #2a4a7a;
+                            padding-left: 1.4rem;
+                            font-size: 1.8rem;
+                        }
+                        & .divNumPerso{
+                            width: 100%;
+                            height: max-content;
+                            display: flex;
+                            align-items: center;
+                            & input{
+                                width: 10rem;
+                                font-size: 1.8rem;
+                                color: #2a4a7add;
+                                margin-left: 1.4rem;
+                                padding: 1rem 2rem;
+                                border-radius: 1rem;
+                                margin-top: .6rem;
+                            }
+                            & .limitePersoSpan{
+                                width: max-content;
+                                font-size: 1.8rem;
+                                margin-left: 1rem;
+                                color: #2a4a7a;
+                                & b{
+                                    font-size: 1.8rem;
+                                    color: #2a4a7a;
+                                }
+                            }
+                        }
+                    }
+                }
+                & .divTituActiGene-A{
+                    width: 100%;
+                    height: max-content;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 2rem;
+                    border-top: 1px solid #2a4a7a44;
+                    border-bottom: 1px solid #2a4a7a44;
+                    padding: 2rem 0;
+                    & .tituloDiv{
+                        width: 100%;
+                        height: max-content;
+                        display: flex;
+                        flex-direction: column;
+                        & span{
+                            font-size: 1.8rem;
+                            color: #2a4a7a;
+                            padding-left: 1.4rem;
+                        }
+                        & input{
+                            width: 46rem;
+                            border-radius: 1rem;
+                            margin-left: 1.4rem;
+                            margin-top: .6rem;
+                            font-size: 1.8rem;
+                            color: #2a4a7add;
+                            height: 4.6rem;
+                            padding-left: 1.4rem;
+                            &::placeholder{
+                                color: #2a4a7a99;
+                            }
+                        }
+                    }
+                    & .actividadDiv{
+                        width: 100%;
+                        height: max-content;
+                        margin-top: 1rem;
+                        margin-bottom: 8rem;
+                        display: flex;
+                        flex-direction: column;
+                        & span{
+                            font-size: 1.8rem;
+                            color: #2a4a7a;
+                            padding-left: 1.4rem;
+                        }
+                        & textarea{
+                            width: 46rem;
+                            height: 14rem;
+                            border-radius: 1rem;
+                            resize: none;
+                            margin-left: 1.4rem;
+                            font-size: 1.8rem;
+                            padding: 1rem;
+                            padding-left: 1.4rem;
+                            color: #2a4a7add;
+                            margin-top: .6rem;
+                            &::placeholder{
+                                color: #2a4a7a99;
+                            }
+                        }
+                    }
+                }
+            }
+            & .divCalendaGene{
+                width: 68%;
+                min-height: 100%;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                & .cubiertaCalen-C{
+                    z-index: -100;
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                & .cubiertaCalen-A{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: #e8ebf088;
+                    z-index: 1000;
+                }
+                & .divCalePrin-A{
+                    width: 100%;
+                    min-height: 82%;
+                    max-height: 82%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 2rem;
+                    & .divSpanInstru{
+                        width: 106rem;
+                        height: 3rem;
+                        display: flex;
+                        & span{
+                            font-size: 1.6rem;
+                            color: #004f78dd;
+                        }
+                    }
+                    & .calendario{
+                        width: 106rem;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        & .calendaHeader{
+                            width: 100%;
+                            height: 8%;
+                            display: flex;
+                            background-color: #5796c0;
+                            align-items: center;
+                            position: relative;
+                            & .spanPdtHeaderCalen{
+                                width: max-content;
+                                font-size: 1.8rem;
+                                font-size: 600;
+                                color: #f2f8ff;
+                                position: absolute;
+                                right: 2rem;
+                            }
+                            & .divBtns{
+                                height: 100%;
+                                width: max-content;
+                                display: flex;
+                                & .btnMoverMes{
+                                    width: 6rem;
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 1.8rem;
+                                    font-weight: 600;
+                                    color: #f2f8ff;
+                                    background-color: #5379b3;
+                                    transition: .3s;
+                                    cursor: pointer;
+                                    &:hover{
+                                        background-color: #5383cc;
+                                    }
+                                }
+                            }
+                            & span{
+                                font-size: 1.8rem;
+                                font-weight: 600;
+                                color: #f2f8ff;
+                                margin-left: 1.6rem;
+                            }
+                            & .divBtnHoy{
+                                width: max-content;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                margin-left: 2rem;
+                                align-items: center;
+                                & .btnHoy-A{
+                                    width: 8rem;
+                                    height: 2.6rem;
+                                    font-size: 1.6rem;
+                                    border-radius: 1.3rem;
+                                    background-color: #004f7811;
+                                    border: 1px solid #f2f8ff;
+                                    color: #f2f8ff;
+                                    font-weight: 600;
+                                    transition: .3s;
+                                    cursor: pointer;
+                                    &:hover{
+                                        background-color: #a8cbdf44;
+                                    }
+                                }
+                            }
+                        }
+                        & .cabeceraDiasCalenda{
+                            width: 100%;
+                            height: 8%;
+                            display: flex;
+                            background-color: #5796C088;
+                            & span{
+                                width: 15.1428rem;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 1.8rem;
+                                color: #f2f8ff;
+                                &:nth-child(1){
+                                    background-color: #41688188;
+                                    color: #08273888;
+                                }
+                            }
+                        }
+                        & .diasDivGene{
+                            width: 100%;
+                            height: max-content;
+                            display: flex;
+                            flex-wrap: wrap;
+                            & .divDia-Domingo{
+                                width: 15.1428rem;
+                                min-height: 6.4rem;
+                                border-bottom: 1px solid #175e8a44;
+                                border-left: 1px solid #175e8a44;
+                                border-right: 1px solid #175e8a44;
+                                background-color: #60769e55;
+                                display: flex;
+                                flex-direction: column;
+                                & .spanNumDia{
+                                    width: 100%;
+                                    font-size: 1.8rem;
+                                    transition: .3s;
+                                    text-align: center;
+                                    height: max-content;
+                                    position: relative;
+                                    font-weight: 600;
+                                    color: #40556e66;
+                                }
+                            }
+                            & .divDia-Hoy{
+                                width: 15.1428rem;
+                                min-height: 6.4rem;
+                                border-bottom: 1px solid #175e8a44;
+                                border-left: 1px solid #175e8a44;
+                                border-right: 1px solid #175e8a44;
+                                background-color: #1a5dda55;
+                                display: flex;
+                                flex-direction: column;
+                                cursor: pointer;
+                                transition: .3s;
+                                & .spanNumDia{
+                                    width: 100%;
+                                    font-size: 1.8rem;
+                                    transition: .3s;
+                                    text-align: center;
+                                    height: max-content;
+                                    position: relative;
+                                    font-weight: 600;
+                                    color: #e8f2ff;
+                                }
+                                & .reservas{
+                                    width: 100%;
+                                    height: 90%;
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    & .divRese{
+                                        width: max-content;
+                                        height: 2.4rem;
+                                        border-radius: 1rem;
+                                        display: flex;
+                                        justify-content: center;
+                                        transition: .3s;
+                                        align-items: center;
+                                        background-color: #1d5d8099;
+                                        padding: 0 1rem;
+                                        margin-top: .2rem;
+                                        & span{
+                                            font-size: 1.5rem;
+                                            color: #f2f8ff;
+                                            font-weight: 600;
+                                        }
+                                    }
+                                }
+                            }
+                            & .divDia-Ante{
+                                width: 15.1428rem;
+                                min-height: 6.4rem;
+                                border-bottom: 1px solid #4c6a7c44;
+                                border-left: 1px solid #4c6a7c44;
+                                border-right: 1px solid #4c6a7c44;
+                                background-color: #456c8122;
+                                display: flex;
+                                flex-direction: column;
+                                cursor: pointer;
+                                transition: .3s;
+                                &:hover{
+                                    background-color: #698ea122;
+                                    & .spanNumDia{
+                                        color: #698a9b99;
+                                    }
+                                    & .reservas{
+                                        & .divRese{
+                                            background-color: #80949e66;
+                                        }
+                                    }  
+                                }
+                                & .spanNumDia{
+                                    width: 100%;
+                                    font-size: 1.8rem;
+                                    text-align: center;
+                                    height: max-content;
+                                    position: relative;
+                                    transition: .3s;
+                                    font-weight: 600;
+                                    color: #4a6b7c99;
+                                }
+                                & .reservas{
+                                    width: 100%;
+                                    height: 90%;
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    & .divRese{
+                                        width: max-content;
+                                        height: 2.4rem;
+                                        border-radius: 1rem;
+                                        display: flex;
+                                        transition: .3s;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-color: #5f727c66;
+                                        padding: 0 1rem;
+                                        margin-top: .2rem;
+                                        & span{
+                                            font-size: 1.5rem;
+                                            color: #f2f8ff;
+                                            font-weight: 600;
+                                        }
+                                    }
+                                }
+                            }
+                            & .divDia-AnteAnte{
+                                width: 15.1428rem;
+                                min-height: 6.4rem;
+                                border-bottom: 1px solid #4c6a7c44;
+                                border-left: 1px solid #4c6a7c44;
+                                border-right: 1px solid #4c6a7c44;
+                                background-color: #456c8122;
+                                display: flex;
+                                flex-direction: column;
+                                cursor: default;
+                                & .spanNumDia{
+                                    width: 100%;
+                                    font-size: 1.8rem;
+                                    text-align: center;
+                                    height: max-content;
+                                    position: relative;
+                                    transition: .3s;
+                                    font-weight: 600;
+                                    color: #4a6b7c99;
+                                }
+                                & .reservas{
+                                    width: 100%;
+                                    height: 90%;
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: column;
+                                }
+                            }
+                            & .divDia-Actu{
+                                width: 15.1428rem;
+                                min-height: 6.4rem;
+                                border-bottom: 1px solid #175e8a44;
+                                border-left: 1px solid #175e8a44;
+                                border-right: 1px solid #175e8a44;
+                                background-color: #2f79a022;
+                                display: flex;
+                                flex-direction: column;
+                                cursor: pointer;
+                                transition: .3s;
+                                &:hover{
+                                    background-color: #6eb3d822;
+                                    & .spanNumDia{
+                                        color: #469cca;
+                                    }
+                                    & .reservas{
+                                        & .divRese{
+                                            background-color: #519bc499;
+                                        }
+                                    }  
+                                }
+                                & .spanNumDia{
+                                    width: 100%;
+                                    font-size: 1.8rem;
+                                    transition: .3s;
+                                    text-align: center;
+                                    height: max-content;
+                                    position: relative;
+                                    font-weight: 600;
+                                    color: #086496;
+                                }
+                                & .reservas{
+                                    width: 100%;
+                                    height: 90%;
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    & .divRese{
+                                        width: max-content;
+                                        height: 2.4rem;
+                                        border-radius: 1rem;
+                                        display: flex;
+                                        justify-content: center;
+                                        transition: .3s;
+                                        align-items: center;
+                                        background-color: #1d5d8099;
+                                        padding: 0 1rem;
+                                        margin-top: .2rem;
+                                        & span{
+                                            font-size: 1.5rem;
+                                            color: #f2f8ff;
+                                            font-weight: 600;
+                                        }
+                                    }
+                                }
+                            }
+                            & .divDia-ActuAnte{
+                                width: 15.1428rem;
+                                min-height: 6.4rem;
+                                border-bottom: 1px solid #336a8b44;
+                                border-left: 1px solid #336a8b44;
+                                border-right: 1px solid #336a8b44;
+                                background-color: #4e85a322;
+                                display: flex;
+                                flex-direction: column;
+                                cursor: default;
+                                transition: .3s;
+                                & .spanNumDia{
+                                    width: 100%;
+                                    font-size: 1.8rem;
+                                    transition: .3s;
+                                    text-align: center;
+                                    height: max-content;
+                                    position: relative;
+                                    font-weight: 600;
+                                    color: #386a85aa;
+                                }
+                                & .reservas{
+                                    width: 100%;
+                                    height: 90%;
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: column;
+                                }
+                            }
+                            & .divDia-Prox{
+                                width: 15.1428rem;
+                                min-height: 6.4rem;
+                                border-bottom: 1px solid #175e8a22;
+                                border-left: 1px solid #175e8a22;
+                                border-right: 1px solid #175e8a22;
+                                background-color: #589bbe22;
+                                display: flex;
+                                flex-direction: column;
+                                cursor: pointer;
+                                transition: .3s;
+                                &:hover{
+                                    background-color: #70b0d322;
+                                    & .spanNumDia{
+                                        color: #4e99c266;
+                                    }
+                                    & .reservas{
+                                        & .divRese{
+                                            background-color: #4c8aac66;
+                                        }
+                                    }  
+                                }
+                                & .spanNumDia{
+                                    width: 100%;
+                                    transition: .3s;
+                                    font-size: 1.8rem;
+                                    text-align: center;
+                                    height: max-content;
+                                    position: relative;
+                                    font-weight: 600;
+                                    color: #08649666;
+                                }
+                                & .reservas{
+                                    width: 100%;
+                                    height: 90%;
+                                    transition: .3s;
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    & .divRese{
+                                        width: max-content;
+                                        height: 2.4rem;
+                                        border-radius: 1rem;
+                                        display: flex;
+                                        justify-content: center;
+                                        transition: .3s;
+                                        align-items: center;
+                                        background-color: #1d5d8066;
+                                        padding: 0 1rem;
+                                        margin-top: .2rem;
+                                        & span{
+                                            font-size: 1.5rem;
+                                            color: #f2f8ff;
+                                            font-weight: 600;
+                                        }
+                                    }
+                                }
+                            }
+                            & .divDia-ProxAnte{
+                                width: 15.1428rem;
+                                min-height: 6.4rem;
+                                border-bottom: 1px solid #175e8a22;
+                                border-left: 1px solid #175e8a22;
+                                border-right: 1px solid #175e8a22;
+                                background-color: #589bbe22;
+                                display: flex;
+                                flex-direction: column;
+                                cursor: default;
+                                & .spanNumDia{
+                                    width: 100%;
+                                    transition: .3s;
+                                    font-size: 1.8rem;
+                                    text-align: center;
+                                    height: max-content;
+                                    position: relative;
+                                    font-weight: 600;
+                                    color: #08649666;
+                                }
+                                & .reservas{
+                                    width: 100%;
+                                    height: 90%;
+                                    transition: .3s;
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: column;
+                                }
+                            }
+                        }
+                    }
+                }
+                & .divDispoDia-A{
+                    width: 100%;
+                    height: 22rem;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #004f7822;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    & .divSpan-fecha{
+                        width: 100%;
+                        height: max-content;
+                        display: flex;
+                        & .diaSpanPrin-D{
+                            width: max-content;
+                            padding-left: 2rem;
+                            font-size: 1.8rem;
+                            font-weight: 600;
+                            color: #004f78;
+                            margin-top: 1rem;
+                        }
+                        & .diaSpanPrin-B{
+                            width: max-content;
+                            padding-left: 2rem;
+                            font-size: 1.8rem;
+                            font-weight: 600;
+                            color: #c70808;
+                            margin-top: 1rem;
+                        }
+                        & .spanInstru-D{
+                            width: max-content;
+                            font-size: 1.8rem;
+                            color: #004f78;
+                            margin-top: 1rem;
+                            margin-left: .6rem;
+                        }
+                        & .spanInstru-B{
+                            width: max-content;
+                            font-size: 1.8rem;
+                            color: #c70808;
+                            margin-top: 1rem;
+                            margin-left: .6rem;
+                        }
+                    }
+                    & .dataDiv{
+                        width: 100%;
+                        height: max-content;
+                        display: flex;
+                        padding-left: 2rem;
+                        flex-direction: column;
+                        & .divLineaTiempo{
+                            width: 106rem;
+                            height: 6rem;
+                            border: 1px solid #004f7888;
+                            margin-top: 1rem;
+                            display: flex;
+                            overflow: hidden;
+                            position: relative;
+                            & .divDispoReserBase{
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                & .divDisponibilidad{
+                                    height: 100%;
+                                    position: absolute;
+                                    background-color: #c4631477;
+                                    z-index: 600;
+                                }
+                            }
+                            & .divHora{
+                                min-width: 8.8rem;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+                                flex-direction: column;
+                                border-left: 1px solid #004f7844;
+                                background-color: #f2f8ff99;
+                                & span{
+                                    width: 100%;
+                                    height: max-content;
+                                    font-size: 1.4rem;
+                                    font-weight: 600;
+                                    text-align: center;
+                                    color: #004f7888;
+                                }
+                            }
+                        }
+                        & .horaDispoSpan{
+                            width: 100%;
+                            font-size: 1.8rem;
+                            font-weight: 600;
+                            color: #004f78;
+                            margin-top: 1rem;
+                        }
+                        & .divHorariosDispo{
+                            width: 100%;
+                            height: max-content;
+                            display: flex;
+                            & .divHorarios{
+                                width: 106rem;
+                                height: 6rem;
+                                margin-top: .6rem;
+                                border: 1px solid #004f7844;
+                                background-color: #f2f8ff22;
+                                align-items: center;
+                                padding-bottom: .6rem;
+                                display: grid;
+                                grid-auto-flow: column;
+                                grid-auto-columns: max-content;
+                                overflow-x: auto;
+                                overflow-y: hidden;
+                                &::-webkit-scrollbar {
+                                    -webkit-appearance: none;
+                                    height: 0.4rem;
+                                }
+                                &::-webkit-scrollbar-thumb {
+                                    border-radius: .4rem;
+                                    background-color: #004f7822;
+                                }
+                                & .spanHorario{
+                                    width: max-content;
+                                    height: 2.4rem;
+                                    border-radius: 1.2rem;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 1.8rem;
+                                    padding: .6rem 1rem;
+                                    background-color: #f2f8ff66;
+                                    font-weight: 600;
+                                    color: #307800;
+                                    border: 1px solid #307800;
+                                    transition: .3s;
+                                    cursor: pointer;
+                                    &:nth-child(1){
+                                        margin-left: 1rem;
+                                        margin-right: 1rem;
+                                    }
+                                    margin-right: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .div4-A{
+            width: 100%;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            position: relative;
+            & .cubiertaBtn-A{
+                width: 100%;
+                height: 100%;
+                background-color: #e8ebf088;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1000;
+            }
+            & .cubiertaBtn-C{
+                z-index: -100;
+                height: 0;
+                width: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            & #separador{
+                margin: 2rem 0;
+                border-bottom: 2px dashed #004f7844;
+                width: 100%;
+            }
+            & .contPrecios{
+                width: 100%;
+                height: max-content;
+                background-color: #004f7811;
+                display: flex;
+                flex-direction: column;
+                & div{
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    height: max-content;
+                    border-bottom:  1px solid #004f7844;
+                    & span{
+                        width: 24rem;
+                        height: max-content;
+                        color: #004f78;
+                        font-size: 2rem;
+                        padding: 1rem 2rem;
+                    }
+                }
+                & .cabecera{
+                    & span{
+                        font-weight: 600;
+                    }
+                }
+                & .divTotal{
+                    height: 8rem;
+                    align-items: center;
+                    & .spanTotalPrecio{
+                        font-weight: 600;
+                        font-size: 2.2rem;
+                    }
+                }
+            }
+            & .btnDivGene{
+                width: 100%;
+                height: max-content;
+                display: flex;
+                justify-content: flex-end;
+                padding-bottom: 2rem;
+                position: relative;
+                padding-right: 2rem;
+                & .spanInstru{
+                    min-height: 100%;
+                    width: max-content;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 2rem;
+                    & .spanInstruBtn{
+                        font-size: 1.8rem;
+                        color: #004f78;
+                        width: max-content;
+                        height: max-content;
+                    }
+                }
+                & button{
+                    width: max-content;
+                    height: max-content;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    border-radius: 1rem;
+                    padding: 1rem 2rem;
+                    &:nth-child(2){
+                        margin-left: 1.4rem;
+                    }
+                }
+                & .btnContinuar{
+                    background-color: #2f971a;
+                    color: #f2f8ff;
+                    transition: .3s;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #6bbe33;
+                    } 
+                }
+                & .btnCancelar{
+                    background-color: #a73c3c;
+                    color: #f2f8ff;
+                    transition: .3s;
+                    position: absolute;
+                    left: 2rem;
+                    margin-right: 1rem;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #df6767;
+                    } 
+                }
+                & .btnContinuar-C{
+                    background-color: #769670;
+                    color: #344e34;
+                    cursor: default;
+                    &:hover{
+                        background-color: #769670;
+                    } 
+                }
+                & .btnCancelar-C{
+                    background-color: #967070;
+                    margin-right: 1rem;
+                    color: #4e3434;
+                    position: absolute;
+                    left: 2rem;
+                    cursor: default;
+                    &:hover{
+                        background-color: #967070;
+                    } 
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    width: 100%;
+    height: 26rem;
+    background-color: #004f78;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    & .flexContainerEnlaces{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid #ffffff44;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ffffff44;
+        & a{
+            margin-right: 2rem;
+            &:last-child{
+                margin-right: 3rem;
+            }
+        }
+    }
+    & .flexContainerLogo{
+        width: 100%;
+        display: flex;
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+        & .footer_logoBizSvg {
+            width: 7rem;
+            height: max-content;
+            fill: #ffffffdd;
+            margin: 1rem 0;
+        }
+        & .footer_copyrightContent {
+            width: 100%;
+            height: max-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 400;
+            color: #ffffffdd;
+            font-size: 2rem;
+        }
+    }
+  }
